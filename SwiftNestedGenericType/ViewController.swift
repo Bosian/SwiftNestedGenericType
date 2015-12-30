@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var label: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -20,6 +23,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-
+    // ========== UI Event ==========
+    @IBAction func buttonHandler(sender: UIButton) {
+        
+        let manager = AppleManager()
+        let result = manager.process()
+        
+        self.label.text = result?.data
+    }
 }
 

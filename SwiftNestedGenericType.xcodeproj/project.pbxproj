@@ -14,6 +14,14 @@
 		96AC65381C3436DB000EA69F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96AC65361C3436DB000EA69F /* LaunchScreen.storyboard */; };
 		96AC65431C3436DB000EA69F /* SwiftNestedGenericTypeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC65421C3436DB000EA69F /* SwiftNestedGenericTypeTests.swift */; };
 		96AC654E1C3436DB000EA69F /* SwiftNestedGenericTypeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC654D1C3436DB000EA69F /* SwiftNestedGenericTypeUITests.swift */; };
+		96AC65601C34371C000EA69F /* BaseParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC655F1C34371C000EA69F /* BaseParser.swift */; };
+		96AC65691C34379C000EA69F /* NestedGenericTypeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC65681C34379C000EA69F /* NestedGenericTypeProtocol.swift */; };
+		96AC656B1C343A4E000EA69F /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC656A1C343A4E000EA69F /* BaseModel.swift */; };
+		96AC656D1C343A5A000EA69F /* BaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC656C1C343A5A000EA69F /* BaseManager.swift */; };
+		96AC656F1C3444BB000EA69F /* AppleParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC656E1C3444BB000EA69F /* AppleParser.swift */; };
+		96AC65711C344511000EA69F /* AppleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC65701C344511000EA69F /* AppleModel.swift */; };
+		96AC65741C344546000EA69F /* ParserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC65731C344546000EA69F /* ParserProtocol.swift */; };
+		96AC65761C3445DF000EA69F /* AppleManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96AC65751C3445DF000EA69F /* AppleManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +55,14 @@
 		96AC65491C3436DB000EA69F /* SwiftNestedGenericTypeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftNestedGenericTypeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96AC654D1C3436DB000EA69F /* SwiftNestedGenericTypeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftNestedGenericTypeUITests.swift; sourceTree = "<group>"; };
 		96AC654F1C3436DB000EA69F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96AC655F1C34371C000EA69F /* BaseParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseParser.swift; sourceTree = "<group>"; };
+		96AC65681C34379C000EA69F /* NestedGenericTypeProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NestedGenericTypeProtocol.swift; sourceTree = "<group>"; };
+		96AC656A1C343A4E000EA69F /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		96AC656C1C343A5A000EA69F /* BaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseManager.swift; sourceTree = "<group>"; };
+		96AC656E1C3444BB000EA69F /* AppleParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleParser.swift; sourceTree = "<group>"; };
+		96AC65701C344511000EA69F /* AppleModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleModel.swift; sourceTree = "<group>"; };
+		96AC65731C344546000EA69F /* ParserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParserProtocol.swift; sourceTree = "<group>"; };
+		96AC65751C3445DF000EA69F /* AppleManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,9 +113,9 @@
 		96AC652C1C3436DA000EA69F /* SwiftNestedGenericType */ = {
 			isa = PBXGroup;
 			children = (
+				96AC655B1C3436FD000EA69F /* Models */,
 				96AC652D1C3436DA000EA69F /* AppDelegate.swift */,
-				96AC652F1C3436DB000EA69F /* ViewController.swift */,
-				96AC65311C3436DB000EA69F /* Main.storyboard */,
+				96AC65771C344754000EA69F /* Views */,
 				96AC65341C3436DB000EA69F /* Assets.xcassets */,
 				96AC65361C3436DB000EA69F /* LaunchScreen.storyboard */,
 				96AC65391C3436DB000EA69F /* Info.plist */,
@@ -123,6 +139,38 @@
 				96AC654F1C3436DB000EA69F /* Info.plist */,
 			);
 			path = SwiftNestedGenericTypeUITests;
+			sourceTree = "<group>";
+		};
+		96AC655B1C3436FD000EA69F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				96AC65681C34379C000EA69F /* NestedGenericTypeProtocol.swift */,
+				96AC65731C344546000EA69F /* ParserProtocol.swift */,
+				96AC655F1C34371C000EA69F /* BaseParser.swift */,
+				96AC656C1C343A5A000EA69F /* BaseManager.swift */,
+				96AC656A1C343A4E000EA69F /* BaseModel.swift */,
+				96AC65721C344517000EA69F /* Apple */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		96AC65721C344517000EA69F /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				96AC656E1C3444BB000EA69F /* AppleParser.swift */,
+				96AC65751C3445DF000EA69F /* AppleManager.swift */,
+				96AC65701C344511000EA69F /* AppleModel.swift */,
+			);
+			name = Apple;
+			sourceTree = "<group>";
+		};
+		96AC65771C344754000EA69F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				96AC65311C3436DB000EA69F /* Main.storyboard */,
+				96AC652F1C3436DB000EA69F /* ViewController.swift */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +304,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96AC656D1C343A5A000EA69F /* BaseManager.swift in Sources */,
+				96AC65691C34379C000EA69F /* NestedGenericTypeProtocol.swift in Sources */,
 				96AC65301C3436DB000EA69F /* ViewController.swift in Sources */,
+				96AC656F1C3444BB000EA69F /* AppleParser.swift in Sources */,
+				96AC65601C34371C000EA69F /* BaseParser.swift in Sources */,
 				96AC652E1C3436DA000EA69F /* AppDelegate.swift in Sources */,
+				96AC65761C3445DF000EA69F /* AppleManager.swift in Sources */,
+				96AC65711C344511000EA69F /* AppleModel.swift in Sources */,
+				96AC656B1C343A4E000EA69F /* BaseModel.swift in Sources */,
+				96AC65741C344546000EA69F /* ParserProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
