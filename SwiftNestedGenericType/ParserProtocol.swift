@@ -10,7 +10,7 @@ import UIKit
 
 protocol ParserProtocol
 {
-    typealias TResult
+    associatedtype TResult
     
     func parseJson(jsonDictionary: NSDictionary?) -> TResult
 }
